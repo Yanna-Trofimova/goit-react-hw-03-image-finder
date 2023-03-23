@@ -14,8 +14,11 @@ import css from 'components/ImageGallery/ImageGallery.module.css'
  };
 
 ImageGallery.propTypes = {
-  picture: PropTypes.array.isRequired,
-  onImageClick : PropTypes.func.isRequired
+  onImageClick: PropTypes.func.isRequired,
+  picture:PropTypes.arrayOf(
+        PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        })),
   
 }
  

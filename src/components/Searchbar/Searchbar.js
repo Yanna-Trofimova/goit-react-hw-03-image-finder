@@ -15,7 +15,7 @@ export default class Searchbar extends Component {
     }
 
 
-    handelSubmit = e => {
+    handelSubmit = (e  ) => {
         e.preventDefault();
 
 
@@ -25,9 +25,6 @@ export default class Searchbar extends Component {
          }
 
         this.props.onSubmit(this.state.pictureName);
-
-
-        this.setState({ pictureName: '' });
     }
 
 

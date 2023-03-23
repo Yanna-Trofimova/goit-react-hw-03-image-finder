@@ -16,8 +16,8 @@ import css from 'components/ImageGalleryItem/ImageGalleryItem.module.css'
 };
 
 ImageGalleryItem.propTypes = {
-  webformatURL: PropTypes.string.isRequired,
-  largeImageURL : PropTypes.string.isRequired,
+  // webformatURL: PropTypes.string.isRequired,
+  // largeImageURL : PropTypes.string.isRequired,
   openModal : PropTypes.func.isRequired
   
 }
