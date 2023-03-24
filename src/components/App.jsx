@@ -70,7 +70,7 @@ buttonLoad = length => {
 };
 
 onSubmit= pictureName => {
-  this.setState({ pictureName });
+ 
   
  if(this.state.pictureName.trim() === pictureName) {
              return alert(`ви вже продивляєтесь ${pictureName}`);
@@ -91,10 +91,10 @@ closeModal = () => {
 }
 
   render() {
-    const { picture, loading, buttonLoad,showModal,bigImg, page } = this.state;
+    const { picture, loading, buttonLoad,showModal,bigImg } = this.state;
     return (
       <>
-        <Searchbar onSubmit={this.onSubmit} page={ page} picture={picture} />
+        <Searchbar onSubmit={this.onSubmit} />
         {picture && <ImageGallery picture={picture} onImageClick={this.openModal} />}
         {buttonLoad && <Button onLoadMore={this.onLoadMore} />}
         {loading && <Loader/>}
